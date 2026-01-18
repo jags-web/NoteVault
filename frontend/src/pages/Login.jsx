@@ -9,7 +9,7 @@ export default function Login() {
 
   const login = async () => {
     if (!email.trim() || !password.trim()) return; // prevent empty login
-    await api.post("/login", { email, password })
+    await api.post("/api/login", { email, password })
     navigate("/dashboard")
   }
 
