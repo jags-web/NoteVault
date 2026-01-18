@@ -8,7 +8,7 @@ export default function Signup() {
 
   const signup = async () => {
     if (!form.name || !form.userName || !form.email || !form.password) return
-    await api.post("/signup", form)
+    await api.post("/api/signup", form)
     navigate("/dashboard")
   }
 
