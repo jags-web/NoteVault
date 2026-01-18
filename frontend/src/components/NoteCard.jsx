@@ -9,7 +9,7 @@ export default function NoteCard({ note, refresh }) {
   // 🔄 UPDATE NOTE
   const handleUpdate = async () => {
     try {
-      await api.put(`/notes/${note._id}`, {
+      await api.put(`/api/notes/${note._id}`, {
         title,
         content
       })
@@ -23,7 +23,7 @@ export default function NoteCard({ note, refresh }) {
   // ❌ DELETE NOTE
   const handleDelete = async () => {
     try {
-      await api.delete(`/notes/${note._id}`)
+      await api.delete(`/api/notes/${note._id}`)
       refresh()
     } catch (err) {
       console.log(err)
