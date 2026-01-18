@@ -8,8 +8,9 @@
 
 ##  Overview
 
-NoteVault is a **full-stack personal notes application** built with **React**, **Tailwind CSS**, **Node.js**, **Express.js**, and **MongoDB**.  
-It allows users to **securely create, view, update, and delete personal notes**, with **JWT authentication** ensuring each user only accesses their own data.
+NoteVault is a full-stack personal notes application built with React, Tailwind CSS**, Node.js**, Express.js, and MongoDB.  
+It allows users to securely create, view, update, and delete personal notes, with JWT authentication ensuring each user only accesses their own data.
+
 ---
 
 ##  Features
