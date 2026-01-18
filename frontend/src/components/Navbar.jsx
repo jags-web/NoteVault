@@ -5,7 +5,7 @@ export default function Navbar() {
   const navigate = useNavigate()
 
   const logout = async () => {
-    await api.post("/logout")
+    await api.post("/api/logout")
     navigate("/")
   }
 
