@@ -7,7 +7,7 @@ export default function ProtectedRoute({ children }) {
   const [auth, setAuth] = useState(false)
 
   useEffect(() => {
-    api.get("/notes")
+    api.get("/api/notes")
       .then(() => setAuth(true))
       .catch(() => setAuth(false))
       .finally(() => setLoading(false))
