@@ -12,7 +12,7 @@ let port = process.env.PORT || 3000
 
 app.use(
   cors({
-    origin: "http://localhost:5173", // frontend URL
+    origin: ["http://localhost:5173", "https://notevault-23jx.onrender.com"],
     credentials: true,               // cookies / jwt ke liye
   })
 );
