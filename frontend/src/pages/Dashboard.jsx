@@ -10,7 +10,7 @@ export default function Dashboard() {
 
   const fetchNotes = async () => {
     try {
-      const res = await api.get("/notes")
+      const res = await api.get("/api/notes")
       setNotes(res.data)
     } catch (err) {
       console.log(err)
