@@ -25,7 +25,7 @@ export default function Dashboard() {
     }
 
     try {
-      await api.post("/notes", { title, content })
+      await api.post("/api/notes", { title, content })
       setTitle("")
       setContent("")
       fetchNotes()
